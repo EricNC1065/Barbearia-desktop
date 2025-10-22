@@ -1,0 +1,517 @@
+/*
+
+Main color: #C78A3B;
+Tint: #0D0D0D;
+
+
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+ul {
+  text-decoration: none;
+}
+a,
+li {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.xl-text {
+  font-size: 4rem;
+}
+.center {
+  text-align: center;
+}
+
+.py {
+  padding: 1rem 0 1rem;
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+}
+
+.grid--3-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+}
+.grid--4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0de8;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: white;
+  font-size: 2.8rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links .btn {
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #c78a3b;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.nav-links a {
+  color: #c78a3b;
+  font-size: 1.8rem;
+  margin: auto;
+  transition: all 0.3s;
+}
+
+.nav-links a:hover {
+  color: #b8b3ad;
+}
+
+.enfatize {
+  color: #c78a3b;
+}
+
+/*================= Hero Section =================*/
+
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 72rem;
+  background-image: linear-gradient(
+      to right top,
+      rgba(13, 13, 13, 0.8),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../img/home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+#hero-section p,
+.welcome,
+a {
+  color: #e9ecef;
+  text-align: center;
+}
+
+#hero-section a {
+  color: #ffff;
+}
+
+#hero-section p {
+  font-size: 2.4rem;
+}
+
+.agendamento {
+  background-color: #c78a3b;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+/*================ About Section =============*/
+
+#about {
+  background: #0d0d0d;
+  height: 70rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr;
+  column-gap: 2rem;
+}
+
+#about .txt-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  color: #e7e7e7;
+  margin-right: 0.5rem;
+}
+
+#about .img-about {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+#about .img-about img {
+  height: 30rem;
+  width: 27rem;
+  border-radius: 1rem;
+}
+
+#about .img-about .img1 {
+  z-index: 2;
+  margin: -15rem 0 0 0;
+}
+
+#about .img-about .img2 {
+  z-index: 1;
+  margin: 25rem 0 0 -9rem;
+}
+
+#about .txt-about p {
+  font-size: 2.4rem;
+  margin-top: 1.5rem;
+}
+
+/*================= Services =================*/
+.card-container {
+  height: 48rem;
+  width: 100%;
+  background: #e7e7e783;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+}
+
+#services p,
+.nome-corte {
+  font-size: 2.4rem;
+}
+
+.card-container .card,
+.team-container .card {
+  background: #0d0d0d;
+  height: 35.2rem;
+  width: 28rem;
+  margin: 1.5rem;
+  color: #e7e7e7;
+  border-radius: 1rem;
+}
+
+.card-container .card .nome-corte {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.card-container .card-item1 .card-img {
+  height: 24rem;
+  background-image: url("../img/corte-cabelo2.jpg");
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+}
+.card-container .card-item2 .card-img {
+  height: 24rem;
+  background-image: url("../img/Corte-barba.jpg");
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+}
+.card-container .card-item3 .card-img {
+  height: 24rem;
+  background-image: url("../img/corte-cabelo3.jpg");
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+}
+
+/*================= Our team ==================*/
+#ourteam {
+  height: 60rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d0dda;
+}
+
+#ourteam .team-container {
+  height: 33rem;
+  width: 95rem;
+  background: #c78a3b11;
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem#fff;
+}
+
+#ourteam .team-container h1 {
+  writing-mode: vertical-rl;
+  margin: auto 6rem auto -3rem;
+}
+
+.team-container .card {
+  height: 29.5rem;
+  width: 26rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-container .team-el1 {
+  background-image: url("../img/barber01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.team-container .team-el2 {
+  background-image: url("../img/barber02.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.team-container .team-el3 {
+  background-image: url("../img/barber03.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.team-container .name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #c78a3b;
+  margin-top: auto;
+  -webkit-text-stroke: 0.1rem black;
+}
+
+#ourteam .social {
+  height: 1.5rem;
+  width: 60%;
+  margin: 0 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ourteam .social img {
+  height: 2rem;
+  width: 2rem;
+  margin-top: 2.5rem;
+}
+
+.team-container .team-el2 .name {
+  color: #fff;
+}
+
+.team-container h1 {
+  color: #fff;
+}
+
+/* ============= Nossas instalações ============ */
+#ourPlaces {
+  height: 62rem;
+  width: 100%;
+  background: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ourPlaces h1 {
+  margin: -10rem 0 10rem;
+}
+
+.location {
+  height: 25rem;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.location .location1 {
+  min-height: 100%;
+  background-image: url("../img/Nossa-instalacao1.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location .location2 {
+  min-height: 100%;
+  background-image: url("../img/Nossa-instalacao2.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ourPlaces .location .location1 p,
+#ourPlaces .location .location2 p {
+  width: 60%;
+  font-size: 1.4rem;
+  background: #0d0d0d;
+  padding: 0.2rem;
+  border: 0.1rem solid #fff;
+  border-radius: 0.4rem;
+  border-bottom: none;
+  margin: auto 0 -0.5rem;
+}
+
+#ourPlaces .location .location1 .xl-text,
+#ourPlaces .location .location2 .xl-text {
+  width: 60%;
+  font-size: 2rem;
+  font-weight: 500;
+  background: #0d0d0d;
+  padding: 0.2rem;
+  border: 0.1rem solid #fff;
+  border-radius: 0 0 0.4rem;
+  border-top: none;
+  margin: 0 0 1rem;
+}
+
+#ourPlaces .wht {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  top: 320rem;
+  right: 8rem;
+}
+
+#ourPlaces .wht img {
+  height: 100%;
+  width: 100%;
+}
+
+/* =========== Formulario =========== */
+
+.hidden {
+  display: none;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(186, 121, 29, 0.9),
+    rgba(62, 40, 10, 0.9)
+  );
+  padding: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+
+form .title {
+  margin: 0 0 1rem 0;
+  font-size: 2.8rem;
+}
+
+form .close-btn {
+  text-align: end;
+  margin-top: 3.5rem;
+  cursor: pointer;
+  color: red;
+}
+
+form div input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+form div label {
+  display: block;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+form div select,
+option {
+  height: 3rem;
+  border-radius: 0.8rem;
+  border: none;
+}
+
+form div option {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+form .horas {
+  display: flex;
+  justify-content: center;
+}
+
+form .horas span {
+  padding: 0.3rem;
+  font-size: 1.6rem;
+  border: 0.2rem solid #fff;
+  border-radius: 0.5rem;
+  margin: 0 1rem;
+  color: #fff;
+}
+
+form .button {
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .button button {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: 1rem;
+  z-index: 5;
+}

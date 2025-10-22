@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt_AO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>CX BarberShop</title>
+  </head>
+  <body>
+    <!--============== Hero Section =============-->
+    <!-- Menu-->
+    <nav class="navbar">
+      <div class="logo"><span class="enfatize">CX</span>B</div>
+      <ul class="nav-links">
+        <li><a href="#hero-section">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#ourPlaces">Nossas Instalações</a></li>
+        <li><button class="btn open-form">Agendar Horario</button></li>
+      </ul>
+    </nav>
+    <section id="hero-section">
+      <h1 class="xl-text welcome">
+        O seu <span class="enfatize">estilo</span> mostra o seu cuidado com você
+      </h1>
+      <p class="w-time py">Horário de funcionamento das 08:00 às 21:00</p>
+      <a href="#" class="agendamento my open-form">Agendar horario!</a>
+    </section>
+
+    <!--================= About Section ==============-->
+    <section id="about">
+      <div class="img-about">
+        <img class="img1" src="./img/corte-cabelo1.jpg" alt="" />
+        <img class="img2" src="./img/corte-cabelo3.jpg" alt="" />
+      </div>
+
+      <div class="txt-about">
+        <h1 class="xl-text">Sobre</h1>
+        <p class="center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+          porro laudantium cum voluptatibus esse sunt aliquam ipsam dolorum
+          perferendis perspiciatis.
+        </p>
+        <p class="center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+          obcaecati eligendi repellat consequatur earum animi.
+        </p>
+      </div>
+    </section>
+
+    <!--================== Services Section ================-->
+
+    <section id="services">
+      <h1 class="xl-text center py">Serviços</h1>
+      <p class="center py">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium sed
+        vel numquam ad quia exercitationem!
+      </p>
+      <div class="card-container grid--3-col">
+        <div class="card-item1 card">
+          <div class="card-img background"></div>
+          <h1 class="nome-corte">Corte de cabelo</h1>
+        </div>
+        <div class="card-item2 card">
+          <div class="card-img background"></div>
+          <h1 class="nome-corte">Barba</h1>
+        </div>
+        <div class="card-item3 card">
+          <div class="card-img background"></div>
+          <h1 class="nome-corte">Adicionais</h1>
+        </div>
+      </div>
+    </section>
+
+    <!--======================== Our Team Section ====================-->
+
+    <section id="ourteam">
+      <div class="team-container grid--3-col grid--4">
+        <div class="team-el1 card">
+          <p class="name center">Eren Yeager</p>
+          <div class="social">
+            <img src="./img/facebook.png" alt="" />
+            <img src="./img/instagram.png" alt="" />
+            <img src="./img/twitter.png" alt="" />
+          </div>
+        </div>
+        <div class="team-el2 card">
+          <p class="name center">Satoru Gojo</p>
+          <div class="social">
+            <img src="./img/facebook.png" alt="" />
+            <img src="./img/instagram.png" alt="" />
+            <img src="./img/twitter.png" alt="" />
+          </div>
+        </div>
+        <div class="team-el3 card">
+          <p class="name center">Omah Tokita</p>
+          <div class="social">
+            <img src="./img/facebook.png" alt="" />
+            <img src="./img/instagram.png" alt="" />
+            <img src="./img/twitter.png" alt="" />
+          </div>
+        </div>
+        <h1 class="xl-text py">Nossa equipe</h1>
+      </div>
+    </section>
+
+    <!--=============== Nossas instalações ===============-->
+
+    <section id="ourPlaces">
+      <h1 class="xl-text">Nossas localizações</h1>
+      <div class="location">
+        <div class="location1">
+          <p class="local">Av.Sapalo</p>
+          <h1 class="xl-text">Benguela</h1>
+        </div>
+        <div class="location2">
+          <p class="local">Rua:Anastacio Abel</p>
+          <h1 class="xl-text">Catumbela</h1>
+        </div>
+      </div>
+      <div class="wht">
+        <a
+          aria-label="Chat on WhatsApp"
+          href="https://wa.me/244939328657/?Text = 'Olá, quero agendar um horario'"
+          ><img src="../img/Button Whatsapp.png" alt="Chat on WhatsApp"
+        /></a>
+      </div>
+    </section>
+
+    <!-- ================= Formulário =================-->
+
+    <form class="form hidden" action="#" method="post">
+      <p class="close-btn title">&#x2715;</p>
+      <h1 class="title center">Agendar horario</h1>
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="usuario_nome" />
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="date" id="data" name="usuario_data" />
+      </div>
+      <div>
+        <label for="locais">Selecione um local:</label>
+        <select name="locais" id="locais" required>
+          <option value="">--Selecione--</option>
+          <option value="SP">Av.Sapalo</option>
+          <option value="RJ">Rua:Anastacio Abel</option>
+        </select>
+      </div>
+
+      <div class="times">
+        <label>selecione uma hora</label>
+        <div class="horas">
+          <span>8h-10h</span>
+          <span>10h-12h</span>
+          <span>13h-16h</span>
+          <span>16h-21h</span>
+        </div>
+      </div>
+
+      <div class="button">
+        <button type="submit">Enviar sua mensagem</button>
+      </div>
+    </form>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
